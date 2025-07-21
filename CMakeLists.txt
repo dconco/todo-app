@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(WhatsappBot)
+project(TodoApp)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -20,6 +20,7 @@ file(GLOB C_SOURCES "src/*.c")
 # Find header files (for IDE support, not compilation)
 file(GLOB HEADERS 
     "src/*.h"
+    "src/*.hh"
     "src/*.hpp"
     "src/*.hxx"
     "src/*.h++"
