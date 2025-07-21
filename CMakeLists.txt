@@ -29,6 +29,7 @@ file(GLOB HEADERS
 
 # Create executable with all source files
 add_executable(app ${SOURCES} ${C_SOURCES} ${HEADERS})
+target_precompile_headers(app PRIVATE "src/lib/httplib.h")
 
 # Add DEBUG options for debug builds
 set(CMAKE_CXX_FLAGS_DEBUG "-g -O0")

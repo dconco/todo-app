@@ -19,7 +19,6 @@ out/
 # Executables
 *.exe
 *.out
-app
 *.app
 
 # CMake

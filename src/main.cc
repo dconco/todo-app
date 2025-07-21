@@ -11,11 +11,11 @@ int main(void) {
    ServerPort svr = {
       "0.0.0.0",
       8000
-   };
+   }
 
    server.Get("/", [](const Request &, Response &res) {
-      std::cout << "Index Page Loaded" << std::endl;
-      res.set_content("<h1>Index Page</h1>", "text/html");
+      std::cout << "Index Page Load" << std::endl;
+      res.set_content("<h1>Index</h1>", "text/html");
    });
 
    std::cout << "Server started at " << svr.host << ':' << svr.port << std::endl;
